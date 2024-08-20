@@ -7,7 +7,7 @@
 /* Header==============================
 ======================================= */
 .logo {
-    width: 100%; /* Adjust logo width to be responsive */
+    width: 100%; 
     max-width: 300px;
 }
 
@@ -22,7 +22,7 @@
     justify-content: flex-end;
     align-items: center;
     gap: 5px;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .header-row {
@@ -48,52 +48,54 @@
     background-color: gray;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .header-menus {
-        justify-content: space-between; /* Adjust spacing on smaller screens */
+        justify-content: flex-start; 
     }
 
     .vertical-line {
-        display: none; /* Hide vertical lines on smaller screens */
+        display: inline; 
     }
 
     .smallvertical-line {
-        display: none; /* Hide small vertical lines on smaller screens */
+        display: inline; 
+        margin-top: 10px;
     }
 
     .header-content {
-        flex-direction: column; /* Stack elements vertically */
+        flex-direction: row; 
         align-items: flex-start;
-        gap: 5px;
+        gap: 1px;
     }
 
     .btn {
-        padding: 5px 10px; /* Adjust button padding for smaller screens */
+        padding: 5px 10px; 
     }
 
     .row {
-        padding: 0 15px; /* Reduce padding for smaller screens */
+        padding: 0 15px; 
     }
+    
 }
 
 @media (max-width: 576px) {
     .header-content h6 {
-        font-size: 14px; /* Adjust font size for very small screens */
+        font-size: 14px; 
     }
 
     .btn {
-        font-size: 14px; /* Adjust button font size */
+        font-size: 14px; 
     }
 
     .col-6 {
-        flex: 0 0 100%; /* Make each column full-width */
+        flex: 0 0 100%; 
         max-width: 100%;
-        margin-bottom: 15px; /* Add spacing between rows */
+        margin-bottom: 15px;
     }
 
     .header-menus {
-        flex-direction: column; /* Stack header menus vertically */
+        flex-direction: row; 
         align-items: flex-start;
     }
 }
@@ -202,7 +204,8 @@
     color: rgb(11, 11, 11) !important;
   }
 
-  /* baners */
+  /* Cards==================================
+  ========================================== */
 
 
   .header {
@@ -221,6 +224,8 @@
     text-align: center;
   }
   
+
+
   .card {
     background-color: #fff;
     margin: 15px;
@@ -282,6 +287,8 @@
     background-repeat: no-repeat;
     height: 200px ;
     display: flex;
+
+
  }
  .cards2{
   padding: 0%;
@@ -289,7 +296,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px ;
-  /* width: 1000%; */
   display: flex;
 }
 
@@ -305,3 +311,5 @@
  .rows{
   position: relative;
  }
+
+ 
